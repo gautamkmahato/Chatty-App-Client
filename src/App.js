@@ -3,7 +3,7 @@ import io from 'socket.io-client';
 import React, { useEffect, useRef, useState } from 'react'; 
 import LoadingBar from './components/LoadingBar';
 
-const socket = io.connect('http://localhost:4000');
+const socket = io.connect('https://chatty-app-server.onrender.com');
 
 const chunkSize = 1000 * 1024;
 let delayTime = 5000;
